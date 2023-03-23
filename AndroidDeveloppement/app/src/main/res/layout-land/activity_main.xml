@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    >
+
+    <Button
+        android:id="@+id/Display"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:text="Display"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/PRouge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:text="+Rouge"
+        app:layout_constraintBottom_toTopOf="@+id/PVert"
+        app:layout_constraintEnd_toStartOf="@+id/MRouge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/red"
+        />
+
+    <Button
+        android:id="@+id/MRouge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:text="-Rouge"
+        app:layout_constraintBottom_toTopOf="@+id/MVert"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/PRouge"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/red"
+        />
+
+    <Button
+        android:id="@+id/PVert"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:text="+Vert"
+        app:layout_constraintBottom_toTopOf="@+id/PBlue"
+        app:layout_constraintEnd_toStartOf="@+id/MVert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PRouge"
+        android:backgroundTint="@color/green"
+
+        />
+
+    <Button
+        android:id="@+id/MVert"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:text="-Vert"
+        app:layout_constraintBottom_toTopOf="@+id/MBlue"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/PVert"
+        app:layout_constraintTop_toBottomOf="@+id/MRouge"
+        android:backgroundTint="@color/green"
+        />
+
+    <Button
+        android:id="@+id/PBlue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:text="+Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/MBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PVert"
+        android:backgroundTint="@color/blue"
+        />
+
+    <Button
+        android:id="@+id/MBlue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:text="-Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/PBlue"
+        app:layout_constraintTop_toBottomOf="@+id/MVert"
+        android:backgroundTint="@color/blue"
+
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+</androidx.constraintlayout.widget.ConstraintLayout>
